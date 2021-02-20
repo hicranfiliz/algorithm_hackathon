@@ -16,12 +16,17 @@ char *sifreYapma(const char *d, char krk, int kac, int secim);
     int kac;
     int secim;
 
+       dongu:
 	printf("Kucuk-Buyuk Harf Secimi Yapiniz\n");
 	printf("1. Buyuk Harf\n");
     printf("2. Kucuk Harf\n");
+    printf("3. Cikis\n");
     printf("Secim: ");
     scanf("%d",&secim);
+    if(secim==3)
+        return 0;
 
+        dongu2:
     printf("Bir cumle giriniz...\n");
     scanf("%s",&metin);
     printf("%s\n", metin);
@@ -29,20 +34,25 @@ char *sifreYapma(const char *d, char krk, int kac, int secim);
     printf("Kac karakter otesi sifrelemek istersiniz...");
     scanf("%d",&kac);
 
-        p=harfKontrol(metin);
-        char *harfKontrol(const char *p);
+        /*p=harfKontrol(metin);
+        char *harfKontrol(const char *p);*/
 
-        d=sifreYapma(metin, krk, kac, secim)
+        d=sifreYapma(metin, krk, kac, secim);
         char *sifreYapma(const char *d, char krk, int kac, int secim);
 
+        sleep(10);
+        printf("\n10 Saniye sonra menuye yonlendirileceksiniz.\a");
+        system("cls");
+
+        goto dongu;
     }
 
-    char *harfKontrol(const char *p){
+    /*char *harfKontrol(const char *p){
 
 	    if( isalpha(*p)){
 	        printf( "Character %c is alpha\n",*p );
 	    }
-	}
+	}*/
 
     char *sifreYapma(const char *d, char krk, int kac, int secim){
 
