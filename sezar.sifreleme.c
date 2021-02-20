@@ -16,7 +16,7 @@ char *sifreYapma(const char *d, char krk, int kac, int secim);
     int kac;
     int secim;
 
-       dongu:
+        dongu:
 	printf("Kucuk-Buyuk Harf Secimi Yapiniz\n");
 	printf("1. Buyuk Harf\n");
     printf("2. Kucuk Harf\n");
